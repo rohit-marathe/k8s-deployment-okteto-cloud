@@ -1,0 +1,10 @@
+services:
+  docker:
+    image: rohitmarathe/wheatherapp:latest
+    build: .
+    replicas: 1
+    ports:
+      - 80:80
+    resources:
+      cpu: 100m
+      memory: 128Mi
