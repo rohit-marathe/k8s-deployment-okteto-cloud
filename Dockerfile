@@ -1,5 +1,6 @@
 FROM node:16.16.0 as teamalpha
 WORKDIR /usr/app
+RUN echo "everything is running fine"
 COPY package.json .
 RUN npm install
 COPY . .
